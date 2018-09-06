@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../assets/style.css">
-  <title>Placing Grid Items!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/style.css">
+    <title>Placing Grid Items!</title>
 </head>
 
 <body>
-  <div class="container">
+<div class="container">
     <div class="item item1">1</div>
     <div class="item item2">2</div>
     <div class="item item3">3</div>
@@ -18,7 +18,7 @@
     <div class="item item6">6</div>
     <div class="item item7">7</div>
     <div class="item item8">8</div>
-    <div class="item item8">💩</div>
+    <div class="item item8 poop">💩</div>
     <div class="item item9">9</div>
     <div class="item item10">10</div>
     <div class="item item11">11</div>
@@ -41,15 +41,21 @@
     <div class="item item28">28</div>
     <div class="item item29">29</div>
     <div class="item item30">30</div>
-  </div>
+</div>
 
-  <style>
+<style>
     .container {
-      display: grid;
-      grid-gap: 20px;
-      grid-template-columns: repeat(5, 1fr);
+        display: grid;
+        grid-gap: 1.2rem;
+        grid-template-columns: repeat(5, 1fr);
     }
-  </style>
+
+    .poop {
+        grid-column: 1 / -4;
+        grid-row: 3 / 8;
+        background: #bada55;
+    }
+</style>
 </body>
 
 </html>
